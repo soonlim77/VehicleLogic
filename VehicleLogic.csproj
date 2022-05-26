@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{68524630-9B6F-4486-93D1-C214BE6F3714}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VehicleLogic</RootNamespace>
+    <AssemblyName>VehicleLogic</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Enum\Enum.cs" />
+    <Compile Include="Factory\CompactFactory.cs" />
+    <Compile Include="Factory\EconFactory.cs" />
+    <Compile Include="Factory\IVehicleFactory.cs" />
+    <Compile Include="Factory\LuxuriousFactory.cs" />
+    <Compile Include="LevelFactory.cs" />
+    <Compile Include="ModelFactory\CompactFactory\ChevroletModelFactory.cs" />
+    <Compile Include="ModelFactory\CompactFactory\ProtonModelFactory.cs" />
+    <Compile Include="ModelFactory\EconModelFactory\HondaModelFactory.cs" />
+    <Compile Include="ModelFactory\EconModelFactory\MazdaModelFactory.cs" />
+    <Compile Include="ModelFactory\EconModelFactory\ToyotaModelFactory.cs" />
+    <Compile Include="ModelFactory\IVehicleModel.cs" />
+    <Compile Include="ModelFactory\LuxModelFactory\AudiModelFactory.cs" />
+    <Compile Include="ModelFactory\LuxModelFactory\BenzModelFactory.cs" />
+    <Compile Include="ModelFactory\LuxModelFactory\BMWModelFactory.cs" />
+    <Compile Include="Model\Car\CompactCar.cs" />
+    <Compile Include="Model\Car\Compact\Focus.cs" />
+    <Compile Include="Model\Car\Compact\Grand.cs" />
+    <Compile Include="Model\Car\Compact\Impala.cs" />
+    <Compile Include="Model\Car\Compact\Myvi.cs" />
+    <Compile Include="Model\Car\Compact\Persona.cs" />
+    <Compile Include="Model\Car\Compact\Saga.cs" />
+    <Compile Include="Model\Car\EconCar.cs" />
+    <Compile Include="Model\Car\Econ\Accord.cs" />
+    <Compile Include="Model\Car\Econ\Camry.cs" />
+    <Compile Include="Model\Car\Econ\City.cs" />
+    <Compile Include="Model\Car\Econ\Civic.cs" />
+    <Compile Include="Model\Car\Econ\Corolla.cs" />
+    <Compile Include="Model\Car\Econ\M3.cs" />
+    <Compile Include="Model\Car\Econ\M6.cs" />
+    <Compile Include="Model\Car\Econ\Vios.cs" />
+    <Compile Include="Model\Car\ICar.cs" />
+    <Compile Include="Model\Car\LuxuriousCar.cs" />
+    <Compile Include="Model\Car\Lux\C200.cs" />
+    <Compile Include="Model\Car\Lux\E300.cs" />
+    <Compile Include="Model\Car\Lux\QX3.cs" />
+    <Compile Include="Model\Car\Lux\QX5.cs" />
+    <Compile Include="Model\Car\Lux\S400.cs" />
+    <Compile Include="Model\Car\Lux\X1.cs" />
+    <Compile Include="Model\Car\Lux\X3.cs" />
+    <Compile Include="Model\Car\Lux\X5.cs" />
+    <Compile Include="Model\Sedan\AbsSedan.cs" />
+    <Compile Include="Model\Sedan\C250.cs" />
+    <Compile Include="Model\Sedan\Saga.cs" />
+    <Compile Include="Model\SUV\AbsSUV.cs" />
+    <Compile Include="Model\SUV\RX350.cs" />
+    <Compile Include="Model\SUV\X70.cs" />
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
