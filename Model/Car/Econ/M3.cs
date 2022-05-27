@@ -12,5 +12,13 @@ namespace VehicleLogic.Model.Car.Econ
         {
             return "You select mid class Mazda M3 with 4 seated sedan";
         }
+
+        public override string GetImagePath()
+        {
+            string ipath = @"CarImages\Economic\Mazda\M3.JPG";
+
+            return ImageHelper.GetImagePath(ipath);
+
+        }
     }
 }

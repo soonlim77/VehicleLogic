@@ -11,6 +11,7 @@ namespace VehicleLogic.Model.Car
     {
         public abstract string Describe();
 
+        public abstract string GetImagePath();
     }
   
 }

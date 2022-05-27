@@ -10,6 +10,8 @@ namespace VehicleLogic.Model.Car
         public abstract class LuxuriousCar : ICar
         {
             public abstract string Describe();
+            public abstract string GetImagePath();
+
 
         }
     

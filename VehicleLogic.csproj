@@ -46,6 +46,7 @@
     <Compile Include="Factory\EconFactory.cs" />
     <Compile Include="Factory\IVehicleFactory.cs" />
     <Compile Include="Factory\LuxuriousFactory.cs" />
+    <Compile Include="ImageHelper.cs" />
     <Compile Include="LevelFactory.cs" />
     <Compile Include="ModelFactory\CompactFactory\ChevroletModelFactory.cs" />
     <Compile Include="ModelFactory\CompactFactory\ProtonModelFactory.cs" />
@@ -97,7 +98,24 @@
   <ItemGroup>
     <Folder Include="bin\Debug\" />
     <Folder Include="bin\Release\" />
+    <Folder Include="CarImages\Compact\Chevrolet\" />
+    <Folder Include="CarImages\Compact\Proton\" />
+    <Folder Include="CarImages\Economic\Mazda\" />
     <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CarImages\Economic\Honda\Civic.JPG" />
+    <Content Include="CarImages\Economic\Toyota\Camry.JPG" />
+    <Content Include="CarImages\Economic\Toyota\Corolla.JPG" />
+    <Content Include="CarImages\Economic\Toyota\Vios.JPG" />
+    <Content Include="CarImages\Luxurious\Audi\QX3.JPG" />
+    <Content Include="CarImages\Luxurious\Audi\QX5.JPG" />
+    <Content Include="CarImages\Luxurious\Benz\C200.JPG" />
+    <Content Include="CarImages\Luxurious\Benz\E300.JPG" />
+    <Content Include="CarImages\Luxurious\Benz\S400.JPG" />
+    <Content Include="CarImages\Luxurious\BMW\X1.JPG" />
+    <Content Include="CarImages\Luxurious\BMW\X3.JPG" />
+    <Content Include="CarImages\Luxurious\BMW\X5.JPG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

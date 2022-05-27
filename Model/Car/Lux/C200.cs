@@ -12,5 +12,13 @@ namespace VehicleLogic.Model.Car.Lux
         {
             return "You select luxurious Big Benz C200 small size  with 4 seated sedan";
         }
+
+        public override string GetImagePath()
+        {
+            string ipath = @"CarImages\Luxurious\Benz\C200.JPG";
+
+            return ImageHelper.GetImagePath(ipath);
+
+        }
     }
 }

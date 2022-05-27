@@ -9,6 +9,8 @@ namespace VehicleLogic.Model.Car
     public interface ICar
     {
         string Describe();
+        string GetImagePath();
+
 
     }
 }

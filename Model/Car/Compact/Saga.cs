@@ -12,5 +12,9 @@ namespace VehicleLogic.Model.Car.Compact
         {
             return "You select compact small size Proton Saga with 4 seated sedan";
         }
+        public override string GetImagePath()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

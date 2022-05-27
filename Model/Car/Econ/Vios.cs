@@ -12,7 +12,13 @@ namespace VehicleLogic.Model.Car.Econ
         {
             return "You select small class Toyota Vios with 4 seated sedan";
         }
+        public override string GetImagePath()
+        {
+            string ipath = @"CarImages\Economic\Toyota\Vios.JPG";
 
+            return ImageHelper.GetImagePath(ipath);
+
+        }
     } 
     
     

@@ -12,6 +12,13 @@ namespace VehicleLogic.Model.Car.Econ
         {
             return "You select large size class Honda Accord with 6 seated sedan";
         }
-    
+
+        public override string GetImagePath()
+        {
+            string ipath = @"CarImages\Economic\Honda\Accord.JPG";
+
+            return ImageHelper.GetImagePath(ipath);
+
+        }
     }
 }

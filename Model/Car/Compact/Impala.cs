@@ -12,6 +12,11 @@ namespace VehicleLogic.Model.Car.Compact
         {
             return "You select compact Large size  Chevrolet Impala with 6 seated sedan"; 
         }
+
+        public override string GetImagePath()
+        {
+            throw new NotImplementedException();
+        }
     }
     
 }

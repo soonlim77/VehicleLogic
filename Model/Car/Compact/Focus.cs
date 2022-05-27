@@ -12,6 +12,11 @@ namespace VehicleLogic.Model.Car.Compact
         {
             return "You select compact small size Chevrolet Focus with 4 seated sedan";
         }
+
+        public override string GetImagePath()
+        {
+            throw new NotImplementedException();
+        }
     }
     
     

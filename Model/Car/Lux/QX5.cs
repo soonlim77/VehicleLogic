@@ -12,5 +12,13 @@ namespace VehicleLogic.Model.Car.Lux
         {
             return "You select luxurious Audi QX5 large size with 8 seated SUV";
         }
+
+        public override string GetImagePath()
+        {
+            string ipath = @"CarImages\Luxurious\Audi\QX5.JPG";
+
+            return ImageHelper.GetImagePath(ipath);
+
+        }
     }
 }

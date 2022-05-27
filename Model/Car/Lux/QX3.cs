@@ -12,5 +12,13 @@ namespace VehicleLogic.Model.Car.Lux
         {
             return "You select luxurious  Audi QX3 mid size with 6 seated SUV";
         }
+
+        public override string GetImagePath()
+        {
+            string ipath = @"CarImages\Luxurious\Audi\QX3.JPG";
+
+            return ImageHelper.GetImagePath(ipath);
+
+        }
     }
 }

@@ -12,6 +12,14 @@ namespace VehicleLogic.Model.Car.Econ
         {
             return "You select Mazda M6 with 6 seated sedan";
         }
+
+        public override string GetImagePath()
+        {
+            string ipath = @"CarImages\Economic\Mazda\M6.JPG";
+
+            return ImageHelper.GetImagePath(ipath);
+
+        }
     }
     
 }

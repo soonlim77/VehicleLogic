@@ -12,6 +12,12 @@ namespace VehicleLogic.Model.Car.Econ
         {
             return "You select mid class  Honda Civic with 4 seated sedan";
         }
-    
+        public override string GetImagePath()
+        {
+            string ipath = @"CarImages\Economic\Honda\Civic.JPG";
+
+            return ImageHelper.GetImagePath(ipath);
+
+        }
     }
 }

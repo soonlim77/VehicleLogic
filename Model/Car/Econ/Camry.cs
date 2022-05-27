@@ -12,5 +12,13 @@ namespace VehicleLogic.Model.Car.Econ
         {
             return "You select large size class Toyota Camry with 6 seated sedan";
         }
+
+        public override string GetImagePath()
+        {
+            string ipath = @"CarImages\Economic\Toyota\Camry.JPG";
+
+            return ImageHelper.GetImagePath(ipath);
+
+        }
     }
 }

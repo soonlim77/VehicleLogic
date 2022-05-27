@@ -13,5 +13,12 @@ namespace VehicleLogic.Model.Car.Econ
             return "You select mid class Toyota Corolla with 4 seated sedan";
         }
 
+        public override string GetImagePath()
+        {
+            string ipath = @"CarImages\Economic\Toyota\Corolla.JPG";
+
+            return ImageHelper.GetImagePath(ipath);
+
+        }
     } 
 }

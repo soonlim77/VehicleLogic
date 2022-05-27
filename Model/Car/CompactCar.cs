@@ -9,7 +9,7 @@ namespace VehicleLogic.Model.Car
     public abstract class CompactCar : ICar
     {
         public abstract string Describe();
-
+        public abstract string GetImagePath();
     }
 
     
