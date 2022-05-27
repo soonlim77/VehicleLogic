@@ -14,7 +14,10 @@ namespace VehicleLogic.Model.Car.Compact
         }
         public override string GetImagePath()
         {
-            throw new NotImplementedException();
+            string ipath = @"CarImages\Compact\Proton\Persona.JPG";
+
+            return ImageHelper.GetImagePath(ipath);
+
         }
     }
 }

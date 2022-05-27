@@ -15,7 +15,10 @@ namespace VehicleLogic.Model.Car.Compact
 
         public override string GetImagePath()
         {
-            throw new NotImplementedException();
+            string ipath = @"CarImages\Compact\Chevrolet\Impala.JPG";
+
+            return ImageHelper.GetImagePath(ipath);
+
         }
     }
     

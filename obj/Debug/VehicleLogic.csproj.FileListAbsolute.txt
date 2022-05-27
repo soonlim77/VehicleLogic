@@ -1,6 +1,0 @@
-C:\soonlim\VehicleLogic\bin\Debug\VehicleLogic.dll
-C:\soonlim\VehicleLogic\bin\Debug\VehicleLogic.pdb
-C:\soonlim\VehicleLogic\obj\Debug\VehicleLogic.csproj.AssemblyReference.cache
-C:\soonlim\VehicleLogic\obj\Debug\VehicleLogic.csproj.CoreCompileInputs.cache
-C:\soonlim\VehicleLogic\obj\Debug\VehicleLogic.dll
-C:\soonlim\VehicleLogic\obj\Debug\VehicleLogic.pdb

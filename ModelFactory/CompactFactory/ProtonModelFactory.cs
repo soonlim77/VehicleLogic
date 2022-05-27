@@ -24,7 +24,9 @@ namespace VehicleLogic.ModelFactory.CompactFactory
 
                 case "Persona":CarModel = new Persona();
                     break;
-               
+                case "MyVi": CarModel = new Myvi();
+                    break;
+
                 default: break;
             }
 

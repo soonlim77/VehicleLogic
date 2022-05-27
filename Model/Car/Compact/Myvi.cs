@@ -12,10 +12,16 @@ namespace VehicleLogic.Model.Car.Compact
         {
             return "i am Proton MyVi";
         }
+
+
         public override string GetImagePath()
         {
-            throw new NotImplementedException();
-        }
+            string ipath = @"CarImages\Compact\Proton\Myvi.JPG";
 
+            return ImageHelper.GetImagePath(ipath);
+
+        }
     }
+
+    
 }
