@@ -12,7 +12,7 @@ namespace VehicleLogic.Model.Car.Econ
     {
         public override string Describe(CarChoiceInfo info)
         {
-            return "You select small class  Honda City with 4 seated sedan";
+            return $"You select {info.Level} class {info.Branch} {info.Model} with 4 seated sedan";
         }
         public override string GetImagePath()
         {

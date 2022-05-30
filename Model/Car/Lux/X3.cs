@@ -13,7 +13,7 @@ namespace VehicleLogic.Model.Car.Lux
     {
         public override string Describe(CarChoiceInfo info)
         {
-            return "You select luxurious BMW X3 mid size SUV with 6 seated sedan";
+            return $"You select {info.Level} class {info.Branch} {info.Model} mid size SUV with 6 seated sedan";
         }
 
 

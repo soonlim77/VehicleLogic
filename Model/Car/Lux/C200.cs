@@ -11,7 +11,7 @@ namespace VehicleLogic.Model.Car.Lux
     {
         public override string Describe(CarChoiceInfo info)
         {
-            return "You select luxurious Big Benz C200 small size  with 4 seated sedan";
+            return $"You select {info.Level} class {info.Branch} {info.Model}  with 4 seated sedan";
         }
 
         public override string GetImagePath()

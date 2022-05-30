@@ -12,7 +12,7 @@ namespace VehicleLogic.Model.Car.Lux
     {
         public override string Describe(CarChoiceInfo info)
         {
-            return "You select luxurious Audi QX5 large size with 8 seated SUV";
+            return $"You select {info.Level} class {info.Branch} {info.Model} with 8 seated SUV";
         }
 
         public override string GetImagePath()

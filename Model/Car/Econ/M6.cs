@@ -11,7 +11,7 @@ namespace VehicleLogic.Model.Car.Econ
     {
         public override string Describe(CarChoiceInfo info)
         {
-            return "You select Mazda M6 with 6 seated sedan";
+            return $"You select {info.Level} class {info.Branch} {info.Model} seated sedan";
         }
 
         public override string GetImagePath()
