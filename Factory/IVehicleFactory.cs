@@ -12,6 +12,6 @@ namespace VehicleLogic.Factory
     public interface IVehicleFactory
     {
 
-        IVehicleModel GetBranch(string level);
+        IVehicleModel GetBranch(CarChoiceInfo facInfo);
     }
 }

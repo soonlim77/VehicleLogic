@@ -6,22 +6,24 @@ using System.Text;
 using System.Threading.Tasks;
 
 
+
 namespace VehicleLogic.Model.Car.Lux
 {
     public class X3 : LuxuriousCar
     {
-        public override string Describe()
+        public override string Describe(CarChoiceInfo info)
         {
             return "You select luxurious BMW X3 mid size SUV with 6 seated sedan";
-
         }
 
-        public override string GetImagePath()
+
+
+     public override string GetImagePath()
         {
             string ipath = @"CarImages\Luxurious\BMW\X3.JPG";
 
             return ImageHelper.GetImagePath(ipath);
-
         }
     }
-}
+
+ }

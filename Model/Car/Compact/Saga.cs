@@ -4,11 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+
 namespace VehicleLogic.Model.Car.Compact
 {
     public class Saga : CompactCar
     {
-        public override string Describe()
+        public override string Describe(CarChoiceInfo info)
         {
             return "You select compact small size Proton Saga with 4 seated sedan";
         }

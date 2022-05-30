@@ -12,11 +12,11 @@ namespace VehicleLogic
     {
         private  static IVehicleFactory LFactory ;
 
-        public static IVehicleFactory GetCarLevel(string level)
+        public static IVehicleFactory GetCarLevel(CarChoiceInfo CarInfo)
         {
 
 
-            switch (level)
+            switch (CarInfo.Level)
             {
                 case "Luxurious": LFactory = new LuxuriousFactory();
                     break;

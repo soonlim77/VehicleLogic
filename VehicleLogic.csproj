@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CarChoiceInfo.cs" />
     <Compile Include="Enum\Enum.cs" />
     <Compile Include="Factory\CompactFactory.cs" />
     <Compile Include="Factory\EconFactory.cs" />
@@ -83,12 +84,6 @@
     <Compile Include="Model\Car\Lux\X1.cs" />
     <Compile Include="Model\Car\Lux\X3.cs" />
     <Compile Include="Model\Car\Lux\X5.cs" />
-    <Compile Include="Model\Sedan\AbsSedan.cs" />
-    <Compile Include="Model\Sedan\C250.cs" />
-    <Compile Include="Model\Sedan\Saga.cs" />
-    <Compile Include="Model\SUV\AbsSUV.cs" />
-    <Compile Include="Model\SUV\RX350.cs" />
-    <Compile Include="Model\SUV\X70.cs" />
     <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

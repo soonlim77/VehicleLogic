@@ -10,6 +10,6 @@ namespace VehicleLogic.ModelFactory
     public interface IVehicleModel
     {
 
-        ICar GetCarModel(string brand);
+        ICar GetCarModel(CarChoiceInfo brand);
     }
 }

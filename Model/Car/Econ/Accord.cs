@@ -4,15 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace VehicleLogic.Model.Car.Econ
 {
-   public  class Accord : EconCar
+    public class Accord : EconCar
     {
-        public override string Describe()
+        public Accord()
+        {
+
+        }
+        public Accord(CarColor c)
+        {
+            base.color = c;
+
+        }
+        public override string Describe(CarChoiceInfo info)
         {
             return "You select large size class Honda Accord with 6 seated sedan";
-        }
 
+        }
         public override string GetImagePath()
         {
             string ipath = @"CarImages\Economic\Honda\Accord.JPG";

@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace VehicleLogic.Model.Car.Compact
 {
     public class Myvi : CompactCar
     {
-        public override string Describe()
+        public override string Describe(CarChoiceInfo info)
         {
             return "i am Proton MyVi";
         }

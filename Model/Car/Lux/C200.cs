@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace VehicleLogic.Model.Car.Lux
 {
     public class C200 : LuxuriousCar
     {
-        public override string Describe()
+        public override string Describe(CarChoiceInfo info)
         {
             return "You select luxurious Big Benz C200 small size  with 4 seated sedan";
         }
@@ -21,4 +22,8 @@ namespace VehicleLogic.Model.Car.Lux
 
         }
     }
+
+     
+      
 }
+

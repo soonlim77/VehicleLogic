@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace VehicleLogic.Model.Car.Lux
 {
     public class QX3 : LuxuriousCar
     {
-        public override string Describe()
+        public override string Describe(CarChoiceInfo info)
         {
             return "You select luxurious  Audi QX3 mid size with 6 seated SUV";
         }

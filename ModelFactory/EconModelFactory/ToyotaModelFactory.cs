@@ -12,11 +12,11 @@ namespace VehicleLogic.ModelFactory.EconModelFactory
     {
         private ICar CarModel = null;
 
-        public ICar GetCarModel(string brand)
+        public ICar GetCarModel(CarChoiceInfo CarInfo)
         {
 
 
-            switch (brand)
+            switch (CarInfo.Model)
             {
 
                 case "Vios":CarModel = new Vios();

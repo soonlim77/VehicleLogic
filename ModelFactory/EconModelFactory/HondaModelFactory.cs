@@ -12,11 +12,11 @@ namespace VehicleLogic.ModelFactory.EconModelFactory
     {
         private ICar CarModel = null;
 
-        public ICar GetCarModel(string brand)
+        public ICar GetCarModel(CarChoiceInfo CarInfo)
         {
 
 
-            switch (brand)
+            switch (CarInfo.Model)
             {
 
                 case "City": CarModel = new City();
@@ -24,7 +24,7 @@ namespace VehicleLogic.ModelFactory.EconModelFactory
 
                 case "Civic":CarModel = new Civic();
                     break;
-                case "Accord":CarModel = new Accord();
+                case "Accord":CarModel = new Accord(CarColor.Beigu);
                     break;
                 default: break;
             }

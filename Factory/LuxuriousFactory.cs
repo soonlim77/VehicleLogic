@@ -15,10 +15,10 @@ namespace VehicleLogic.Factory
 
         private IVehicleModel ModelFactory = null;
 
-        public IVehicleModel GetBranch(string level)
+        public IVehicleModel GetBranch(CarChoiceInfo CarInfo )
         {
 
-            switch (level)
+            switch (CarInfo.Branch)
             {
                 case "Benz":ModelFactory = new BenzModelFactory();
                     break;

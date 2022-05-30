@@ -16,9 +16,10 @@ namespace VehicleLogic.Factory
 
 
 
-        public IVehicleModel GetBranch(string level)
+        public IVehicleModel GetBranch(CarChoiceInfo CarInfo)
         {
-            switch (level)
+
+            switch (CarInfo.Branch)
             {
                 case "Proton":ModelFactory = new ProtonModelFactory();
                     break;

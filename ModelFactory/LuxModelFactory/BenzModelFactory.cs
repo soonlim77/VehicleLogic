@@ -12,10 +12,11 @@ namespace VehicleLogic.ModelFactory.LuxModelFactory
     {
         private LuxuriousCar car = null;
 
-        public ICar GetCarModel(string brand)
+        public ICar GetCarModel(CarChoiceInfo CarInfo)
         {
 
-            switch (brand)
+
+            switch (CarInfo.Model)
             {
 
                 case "C200":car = new C200();

@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace VehicleLogic.Model.Car.Lux
 {
     public class E300 : LuxuriousCar
     {
-        public override string Describe()
+        public override string Describe(CarChoiceInfo info)
         {
             return "You select luxurious Big Benz E300 mid size  with 6 seated sedan";
         }
